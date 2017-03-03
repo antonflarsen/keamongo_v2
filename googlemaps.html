@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keamon go</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+
+   <template id="infoboks">
+   <div class=tekstOmSted>
+
+
+   	<h2 class="data_navn">NAVN</h2>
+   	<h3 class="data_adresse">ADRESSE</h3>
+   	<p class="data_beskrivelse">Bla bla bla bla bla bla bla</p>
+
+   	</div>
+   	</template>
+
+
+    <div id="map"></div>
+
+
+<!-- SIMPEL GOOGLE MAP   -->
+<!--
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 55.695, lng: 12.547},
+          zoom: 15
+        });
+		 var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="function.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJldEKzoCD90HAqHWjKuztZIUa9Ns20GA&callback=initMap">
+    </script>
+  </body>
+</html>
