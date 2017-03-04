@@ -28,57 +28,45 @@ function visSteder(listen) {
 }
 
 
-function makeMarker(marker) {
-	console.log("marker er placeret", visSted);
+function makeMarker(sted) {
+	console.log("marker er placeret");
+//	visSted(sted);
 
-	var fredagsbarloc;
+
 
 
 	var marker = new google.maps.Marker({
-		position: marker.position,
+		position: sted.position,
+		icon: sted.icon,
 		map: map,
-		icon: 'marker.svg',
-		title: marker.navn
+//		icon: 'marker.svg',
+		title: sted.navn
 	})
 
-}
+marker.addListener("click", clickOnMarker);
 
-function visSted(location) {
-	//Klon template
-	var klon = document.querySelector(".infoboks").content.cloneNode(true);
+	function clickOnMarker() {
+	console.log("marker er blevet klikket");
+	map.setCenter(sted.position);
+
+	var klon = document.querySelector("#infoboks").content.cloneNode(true);
 
 	//Sæt data ind i klon -
-	klon.querySelector(".data_navn").textContent = location.navn;
-	klon.querySelector(".data_adresse").textContent = location.adresse;
-	klon.querySelector(".position").textContent = location.position;
-	klon.querySelector(".beskrivelse").textContent = location.beskrivelse;
+	klon.querySelector(".data_navn").textContent = sted.navn;
+	klon.querySelector(".data_adresse").textContent = sted.adresse;
+	klon.querySelector(".data_beskrivelse").textContent = sted.beskrivelse;
+	klon.querySelector(".data_billede img").src = sted.billede;
+	klon.querySelector.setAttribute()
 
-	//
+	var infowindow = new google.maps.InfoWindow({
+		content: klon
+	})
+
+	infowindow.open(map, marker);
+}
 }
 
-//
-//
-//		 //Event listener på markers skal skrives som addListener, altså minus "event"
-//		 marker1.addListener("click", clickPaaIkon);
-//
-//		 //INFOWINDOW Variabel!
-//		 var infowindow = new google.maps.InfoWindow({
-//
-//        });
-//
-//
-//
-//
-//		 //Zoom, center og window funktion funktion
-//		 function clickPaaIkon() {
-//			 console.log("er blevet klikket");
-//			 map.setCenter(myLatLng1);
-//			 map.setZoom(18);
-//			infowindow.setContent(klon);
-//
-//			 infowindow.open(map, marker1);
-//		 }
-//
-//
-//
-//
+
+
+
+

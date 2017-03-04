@@ -3,10 +3,13 @@
 		"id": "fredagsbar",
 		"navn": "Fredagsbaren",
 		"adresse": "Lygten 16, Rygergården",
+		"billede": "whiteletter_black.png",
+		"icon": "marker.svg",
 		"position": {
 			"lat": 55.706249,
 			"lng": 12.539709
 		},
+
 		"beskrivelse": "Det er her vi drikker øl om fredagen!"
 	},
 
@@ -31,6 +34,20 @@
 		},
 		"beskrivelse": "Det er her vi drikker øl om fredagen!"
 	},
+
+	{
+		"id": "cykelskuret",
+		"navn": "Cykelskuret",
+		"adresse": "Lygten 16, Cykelskuret ",
+		"position": {
+			"lat": 55.706222,
+			"lng": 12.538877
+		},
+		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+	},
+
+
+
 
 
 
