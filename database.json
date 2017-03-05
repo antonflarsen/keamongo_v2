@@ -3,65 +3,65 @@
 		"id": "fredagsbar",
 		"navn": "Fredagsbaren",
 		"adresse": "Lygten 16, Rygergården",
-		"billede": "whiteletter_black.png",
-		"icon": "marker.svg",
+		"billede": "øl.jpg",
+		"icon": "markerOne.svg",
 		"position": {
 			"lat": 55.706249,
 			"lng": 12.539709
 		},
 
-		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+		"beskrivelse": "Det er her vi drikker øl om fredagen, og ryger smøger resten af tiden."
 	},
 
 	{
 		"id": "lidl",
 		"navn": "Lidl",
 		"adresse": "Lygten 49, København NV",
+		"billede": "lidl.jpg",
+		"icon": "markerOne.svg",
 		"position": {
 			"lat": 55.706249,
 			"lng": 12.538128
 		},
-		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+		"beskrivelse": "Er du sulten? Er du på SU? Så er der billig bake-off!"
 	},
 
 	{
 		"id": "kantinen",
 		"navn": "Kantinen",
 		"adresse": "Lygten 16, ",
+		"billede": "food.jpg",
+		"icon": "markerOne.svg",
 		"position": {
 			"lat": 55.706459,
 			"lng": 12.539302
 		},
-		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+		"beskrivelse": "Det er her at du kan købe mad. Og kaffe. Altid kaffe! "
 	},
 
 	{
 		"id": "cykelskuret",
 		"navn": "Cykelskuret",
 		"adresse": "Lygten 16, Cykelskuret ",
+		"billede": "cykelskur.jpg",
+		"icon": "markerTwo.svg",
 		"position": {
 			"lat": 55.706222,
 			"lng": 12.538877
 		},
-		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+		"beskrivelse": "Hvis du nu var i tvivl om hvor du ellers skulle stille den?"
 	},
-
-
-
-
-
-
 
 	{
 		"id": "hovedindgang",
 		"navn": "Hovedindgangen",
 		"adresse": "Lygten 16",
+		"billede": "hovedindgang.jpg",
+		"icon": "markerTwo.svg",
 		"position": {
 			"lat": 55.706369,
 			"lng": 12.539095
 		},
-		"beskrivelse": "Det er her vi drikker øl om fredagen!"
+		"beskrivelse": "Tænker at det er her at du skal gå ind?"
 	}
 ]
-
-
